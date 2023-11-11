@@ -25,7 +25,7 @@ header{
 header img{
     width: 6%;
 }
-@media (min-width:768px) and (max-width:992px){
+@media(max-width:992px){
     header img{
         width: 7%;
         margin-top: 2%;
@@ -75,25 +75,31 @@ header .icons i:hover{
         margin-top: 3%;
     }
  header img{
-   display: none;
+    display: block;
+    width: 16%;
+    height: 32px;
+    position: absolute;
+    left: 7%;
     }
     header ul{
         display: none;
     }
     header .fa-bars{
         display: block;
-        margin-left: 22%;
+        margin-right: 45%;
+        position: absolute;
+        left: 80%;
     }
 header .fa-bars:hover + ul{
     display: flex;
     flex-direction: column;
     width: 40%;
     background: #ffa5004d;
-    position: relative;
     margin-top: 15%;
     text-align: center;
     height: 193px;
-    left: 33%;
+    position: absolute;
+    left: 57%;
     }
     header .fa-bars:hover + ul li a{
         margin-top: 2px;
@@ -101,8 +107,11 @@ header .fa-bars:hover + ul{
 header .fa-bars:hover header img{
     opacity: 0;
 }
+ header .icons{
+    display: none;
+}
 header .fa-bars:hover{
-    left: 65%;
+    left: 80%;
 }
 
 
@@ -169,6 +178,11 @@ overflow: hidden;
     margin-top: 10%;
     margin-left: 23%;
 }
+@media(max-width:992px){
+    .landing .img img{
+        margin-top: 31%;
+    }
+}
 @media (max-width:767px) {
     .landing .img img{
         margin-left: -147%;
@@ -182,11 +196,7 @@ overflow: hidden;
         width: 94%;
     }
 }
-@media (min-width:768px) and (max-width:992px){
-    .landing .img img{
-        margin-top: 31%;
-    }
-}
+
 .About{
     overflow: hidden;
 }
@@ -220,10 +230,10 @@ overflow: hidden;
     animation-timing-function: linear;
 }
 @keyframes move {
- 50%{
+ 0%{
   transform: translateX(50%);
  }
- 90%{
+ 50%{
     transform: translateX(-40%);
    }
 }
@@ -321,6 +331,20 @@ cursor: pointer;
 .menu a:hover{
     opacity: 0.8;
 }
+
+@media(max-width:1400px){
+    .menu{
+        margin-top: -3%;
+    }
+}
+@media(max-width:992px){
+    .menu{
+        height: 403vh;
+    }
+    .menu .container{
+        margin-left: 9%;
+    }
+}
 @media (max-width:767px) {
     .menu{
         margin-top: -5%;
@@ -330,31 +354,17 @@ cursor: pointer;
         margin-left: 6%;
     }
 }
-
-@media (min-width:993px) and (max-width:1400px){
-    .menu{
-        margin-top: -3%;
-    }
-}
-@media (min-width:768px) and (max-width:992px){
-    .menu{
-        height: 403vh;
-    }
-    .menu .container{
-        margin-left: 9%;
-    }
-}
 /* gallery section */
 .gallary{
     overflow: hidden;
     margin-top: -45%;
 }
-@media (min-width:993px) and (max-width:1300px){
+@media(max-width:1400px){
     .gallary{
         margin-top: -20%;
     }
 }
-@media (min-width:768px) and (max-width:992px){
+@media(max-width:992px){
     .gallary{
         margin-top: 10%;
     }
@@ -444,6 +454,7 @@ cursor: pointer;
 @media (max-width:767px) {
     .customer{
         height: 252vh;
+        margin-left: 12%;
     }
 }
 .customer .container{
@@ -455,12 +466,12 @@ cursor: pointer;
     margin-left: 10%;
     height: 106vh;
 }
-@media (min-width:768px) and (max-width:992px){
+@media(max-width:992px){
     .customer .container{
         margin-left: 0;
     }
 }
-@media (min-width:993px) and (max-width:1400px){
+@media(max-width:1400px){
     .customer .container{
         margin-left: 0;
     }
@@ -521,9 +532,14 @@ cursor: pointer;
     background-image: url(../images/bg2.jpg);
     background-size: cover;
 }
-@media (min-width:993px) and (max-width:1200px){
+@media (max-width:1400px){
     .order{
-        margin-top: -41%;
+        margin-top: -3%;
+    }
+}
+@media (max-width:1300px){
+    .order{
+        margin-top: -36%;
     }
 }
 .order h2{
@@ -572,6 +588,11 @@ cursor: pointer;
     width: 29%;
     margin-left: 11%;
 }
+@media(max-width:992px){
+    .order{
+        margin-top: 2%;
+    }
+}
 @media (max-width:767px) {
     .order{
         margin-top: 18%;
@@ -592,11 +613,6 @@ cursor: pointer;
     }
 }
 
-@media(min-width:768px) and (max-width:992px){
-    .order{
-        margin-top: 2%;
-    }
-}
 /* team section */
 .team{
     margin-top: 7%;
@@ -608,10 +624,11 @@ cursor: pointer;
 .team .container{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(259px, 1fr));
-    margin-left: 11%;
+    grid-template-rows: 332px;
+    margin-left: 5%;
     grid-gap: 2px;
     margin-top: 11%;
-    height: 74vh;
+    height: 53vh;
 }
 .team .box{
     width: 247px;
@@ -675,9 +692,15 @@ color:var(--main-color)
     color: var(--main-color);
     margin-left: 16px;
 }
+@media (max-width:1210px) {
+.team{
+    height: 100vh;
+}
+}
 @media (max-width:767px) {
     .team{
         margin-top: -21%;
+        height: 191vh;
     }
     .team .container{
         margin-left: 15%;

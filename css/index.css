@@ -229,7 +229,7 @@ overflow: hidden;
 }
 @media (max-width:767px) {
     .About{
-        margin-top: -52%;
+        margin-top: -20%;
     }
     .About .img img{
         /* width: 303%; */
@@ -323,8 +323,8 @@ cursor: pointer;
 }
 @media (max-width:767px) {
     .menu{
-        margin-top: -35%;
-        height: 629vh;
+        margin-top: -5%;
+        height: 634vh;
     }
     .menu .container{
         margin-left: 10%;
@@ -334,11 +334,19 @@ cursor: pointer;
     .menu{
         height: 383vh;
     }
+    .menu .container{
+        margin-left: 9%;
+    }
 }
 /* gallery section */
 .gallary{
     overflow: hidden;
     margin-top: -45%;
+}
+@media (min-width:993px) and (max-width:1200px){
+    .gallary{
+        margin-top: -33%;
+    }
 }
 @media (min-width:768px) and (max-width:992px){
     .gallary{
@@ -418,7 +426,7 @@ cursor: pointer;
 }
 @media (max-width:767px) {
     .gallary{
-        margin-top: 7%;
+        margin-top: 19%;
     }
 }
 /* customer section */
@@ -429,7 +437,7 @@ cursor: pointer;
 }
 @media (max-width:767px) {
     .customer{
-        height: 242vh;
+        height: 252vh;
     }
 }
 .customer .container{
@@ -442,6 +450,11 @@ cursor: pointer;
     height: 106vh;
 }
 @media (min-width:768px) and (max-width:992px){
+    .customer .container{
+        margin-left: 0;
+    }
+}
+@media (min-width:993px) and (max-width:1200px){
     .customer .container{
         margin-left: 0;
     }
@@ -501,6 +514,11 @@ cursor: pointer;
     overflow: hidden;
     background-image: url(../images/bg2.jpg);
     background-size: cover;
+}
+@media (min-width:993px) and (max-width:1200px){
+    .order{
+        margin-top: 1%;
+    }
 }
 .order h2{
         text-align: center;
@@ -653,7 +671,7 @@ color:var(--main-color)
 }
 @media (max-width:767px) {
     .team{
-        margin-top: -55%;
+        margin-top: -21%;
     }
     .team .container{
         margin-left: 15%;

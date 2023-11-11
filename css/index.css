@@ -327,7 +327,7 @@ cursor: pointer;
         height: 634vh;
     }
     .menu .container{
-        margin-left: 10%;
+        margin-left: 6%;
     }
 }
 
@@ -351,7 +351,7 @@ cursor: pointer;
 }
 @media (min-width:993px) and (max-width:1300px){
     .gallary{
-        margin-top: -25%;
+        margin-top: -20%;
     }
 }
 @media (min-width:768px) and (max-width:992px){

@@ -330,6 +330,12 @@ cursor: pointer;
         margin-left: 10%;
     }
 }
+
+@media (min-width:993px) and (max-width:1400px){
+    .menu{
+        margin-top: -3%;
+    }
+}
 @media (min-width:768px) and (max-width:992px){
     .menu{
         height: 383vh;
@@ -343,9 +349,9 @@ cursor: pointer;
     overflow: hidden;
     margin-top: -45%;
 }
-@media (min-width:993px) and (max-width:1200px){
+@media (min-width:993px) and (max-width:1300px){
     .gallary{
-        margin-top: -33%;
+        margin-top: -25%;
     }
 }
 @media (min-width:768px) and (max-width:992px){
@@ -454,7 +460,7 @@ cursor: pointer;
         margin-left: 0;
     }
 }
-@media (min-width:993px) and (max-width:1200px){
+@media (min-width:993px) and (max-width:1400px){
     .customer .container{
         margin-left: 0;
     }
@@ -517,7 +523,7 @@ cursor: pointer;
 }
 @media (min-width:993px) and (max-width:1200px){
     .order{
-        margin-top: 1%;
+        margin-top: -41%;
     }
 }
 .order h2{

@@ -539,7 +539,7 @@ cursor: pointer;
 }
 @media (max-width:1300px){
     .order{
-        margin-top: -36%;
+        margin-top: -2%;
     }
 }
 .order h2{
@@ -694,7 +694,7 @@ color:var(--main-color)
 }
 @media (max-width:1210px) {
 .team{
-    height: 100vh;
+    height: 107vh;
 }
 }
 @media (max-width:767px) {

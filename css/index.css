@@ -338,7 +338,7 @@ cursor: pointer;
 }
 @media (min-width:768px) and (max-width:992px){
     .menu{
-        height: 383vh;
+        height: 403vh;
     }
     .menu .container{
         margin-left: 9%;
@@ -439,7 +439,7 @@ cursor: pointer;
 .customer{
     margin-top: 12%;
     overflow: hidden;
-    height: 152vh;
+    height: 159vh;
 }
 @media (max-width:767px) {
     .customer{
